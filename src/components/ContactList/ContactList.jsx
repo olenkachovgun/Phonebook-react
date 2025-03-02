@@ -7,7 +7,7 @@ import {
   selectContacts,
   selectFilteredContacts,
 } from "../../redux/contactsSlice";
-
+import s from "./ContactLst.module.css";
 const ContactForm = lazy(() => import("../ContactForm/ContactForm"));
 const Modal = lazy(() => import("../Modal/Modal"));
 
@@ -32,7 +32,7 @@ const ContactList = () => {
   };
 
   return (
-    <ul>
+    <ul className={s.listItem}>
       {filterData.map((item) => (
         <Contact
           key={item.id}

@@ -64,7 +64,11 @@ const ContactForm = ({ initialValues, text = "Add", closeModal }) => {
           </label>
           <label htmlFor="number">
             Number
-            <Field type="tel" name="number" placeholder="Enter phone" />
+            <Field
+              type="tel"
+              name="number"
+              placeholder="Enter phone XXX-XXX-XXXX"
+            />
             <ErrorMessage className={s.error} name="number" component="span" />
           </label>
           <button className={s.btnAddContact} type="submit">

@@ -9,11 +9,7 @@ import { FaSquarePhone } from "react-icons/fa6";
 import { MdDelete } from "react-icons/md";
 import { FaRegEdit } from "react-icons/fa";
 import { IoMdHeart } from "react-icons/io";
-import {
-  deleteContact,
-  editContact,
-  updateLikeStatus,
-} from "../../redux/contactsOps";
+import { deleteContact, updateLikeStatus } from "../../redux/contactsOps";
 import toast from "react-hot-toast";
 
 const Contact = ({ edit, name, number, id }) => {
