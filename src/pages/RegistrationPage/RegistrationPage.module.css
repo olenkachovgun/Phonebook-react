@@ -1,0 +1,12 @@
+.containerForm {
+    margin-top: 16px;
+    border: 1px solid #d5d3d3;
+    border-radius: 8px;
+    padding: 16px 26px;
+    background-color: rgb(206, 247, 247);
+    box-shadow: 1px -1px 3px #d5d3d3;
+}
+
+.btnRegister {
+    margin-top: 26px;
+}
