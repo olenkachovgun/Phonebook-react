@@ -79,3 +79,25 @@ button:focus-visible {
     background-color: #f9f8f8;
 
 }
+
+.modalDel {
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: white;
+    text-align: center;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.modalBtn {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
