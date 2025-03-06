@@ -1,15 +1,16 @@
 import { useDispatch, useSelector } from "react-redux";
-
 import s from "./Contact.module.css";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosContact } from "react-icons/io";
 import { FaSquarePhone } from "react-icons/fa6";
 //import { like } from "../../redux/contactsSlice";
-
 import { MdDelete } from "react-icons/md";
 import { FaRegEdit } from "react-icons/fa";
 import { IoMdHeart } from "react-icons/io";
-import { deleteContact, updateLikeStatus } from "../../redux/contactsOps";
+import {
+  deleteContact,
+  updateLikeStatus,
+} from "../../redux/contacts/operations";
 import toast from "react-hot-toast";
 
 const Contact = ({ edit, name, number, id }) => {
@@ -48,14 +49,14 @@ const Contact = ({ edit, name, number, id }) => {
           <FaRegEdit />
           <span>Edit</span>
         </button>
-        <button
+        {/* <button
           type="button"
           onClick={() => dispatch(updateLikeStatus({ id, like: !item.like }))}
           className={item.like ? s.like : s.nolike}
         >
           <IoMdHeart />
           <span>Like</span>
-        </button>
+        </button> */}
       </div>
     </li>
   );

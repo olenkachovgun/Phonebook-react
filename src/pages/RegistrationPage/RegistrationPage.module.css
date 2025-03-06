@@ -8,5 +8,18 @@
 }
 
 .btnRegister {
-    margin-top: 26px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.ErrorMessage {
+    color: red;
+    font-size: 14px;
+    margin-top: -8px;
+    font-style: italic;
+
+}
+
+a {
+    font-weight: 600;
 }

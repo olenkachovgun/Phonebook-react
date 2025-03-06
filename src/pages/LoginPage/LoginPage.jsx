@@ -3,8 +3,17 @@ import { Field, Form, Formik, replace } from "formik";
 import s from "../RegistrationPage/RegistrationPage.module.css";
 import { useDispatch } from "react-redux";
 import { loginThunk } from "../../redux/auth/operations";
-import { Navigate, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import * as Yup from "yup";
+import { ErrorMessage } from "formik";
+
+const validationSchema = Yup.object().shape({
+  email: Yup.string().email("Invalid email").required("Required field"),
+  password: Yup.string()
+    .required("Required field")
+    .min(6, "Minimum 6 characters"),
+});
 
 const LoginPage = () => {
   const dispatch = useDispatch();
@@ -27,19 +36,36 @@ const LoginPage = () => {
   return (
     <div>
       <h2>Login Page</h2>
-      <Formik initialValues={initialValues} onSubmit={handleSubmit}>
+      <Formik
+        initialValues={initialValues}
+        onSubmit={handleSubmit}
+        validationSchema={validationSchema}
+      >
         <Form className={s.containerForm}>
           <label>
             <span>Email:</span>
-            <Field name="email" />
+            <Field name="email" type="email" />
+            <ErrorMessage
+              name="email"
+              component="span"
+              className={s.ErrorMessage}
+            />
           </label>
           <label>
             <span>Password:</span>
             <Field name="password" type="password" />
+            <ErrorMessage
+              name="password"
+              component="span"
+              className={s.ErrorMessage}
+            />
           </label>
           <button type="submit" className={s.btnRegister}>
             Login
           </button>
+          <p>
+            You do not have account yet? <Link to="/register">Get IT!</Link>
+          </p>
         </Form>
       </Formik>
     </div>

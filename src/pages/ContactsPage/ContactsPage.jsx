@@ -4,8 +4,8 @@ import ContactForm from "../../components/ContactForm/ContactForm";
 import SearchBox from "../../components/SearchBox/SearchBox ";
 import { FaAddressBook } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchContacts } from "../../redux/contactsOps";
-import { selectContacts } from "../../redux/contactsSlice";
+import { fetchContacts } from "../../redux/contacts/operations";
+import { selectContacts } from "../../redux/contacts/selectors";
 
 const ContactsPage = () => {
   const contacts = useSelector(selectContacts);

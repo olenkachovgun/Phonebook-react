@@ -1,13 +1,12 @@
 import React from "react";
 import s from "./ContactForm.module.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { nanoid } from "nanoid";
 import * as Yup from "yup";
 import { useDispatch } from "react-redux";
-
 import { IoPersonAddSharp } from "react-icons/io5";
-import { addContact, editContact } from "../../redux/contactsOps";
+import { addContact, editContact } from "../../redux/contacts/operations";
 import toast from "react-hot-toast";
+
 const ContactForm = ({ initialValues, text = "Add", closeModal }) => {
   const patternNumber = /^(\d{3}-\d{3}-\d{4}|\d{10})$/;
   const patternName = /^[A-Za-zА-Яа-яЇїІіЄєҐґ ]+$/;

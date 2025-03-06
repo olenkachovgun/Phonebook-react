@@ -2,8 +2,8 @@ import React from "react";
 import s from "./SearchBox.module.css";
 import { CiSearch } from "react-icons/ci";
 import { useDispatch, useSelector } from "react-redux";
-import { filterNameContacts, setFilter } from "../../redux/filtersSlice";
-
+import { filterNameContacts } from "../../redux/filters/selectors";
+import { setFilter } from "../../redux/filters/slice";
 const SearchBox = ({}) => {
   const dispatch = useDispatch();
   const filter = useSelector(filterNameContacts);

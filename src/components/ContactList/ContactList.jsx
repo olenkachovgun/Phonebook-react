@@ -1,12 +1,12 @@
 import { Suspense, lazy, useState } from "react";
-import { resetFilter } from "../../redux/filtersSlice";
+import { resetFilter } from "../../redux/filters/slice";
 import Contact from "../Contact/Contact";
 import { useDispatch, useSelector } from "react-redux";
-import { editContact } from "../../redux/contactsOps";
+import { editContact } from "../../redux/contacts/operations";
 import {
   selectContacts,
   selectFilteredContacts,
-} from "../../redux/contactsSlice";
+} from "../../redux/contacts/selectors";
 import s from "./ContactLst.module.css";
 const ContactForm = lazy(() => import("../ContactForm/ContactForm"));
 const Modal = lazy(() => import("../Modal/Modal"));
@@ -19,6 +19,7 @@ const ContactList = () => {
   const filterData = useSelector(selectFilteredContacts);
 
   const handleSubmit = (values, options) => {
+    console.log(values);
     if (item) {
       dispatch(editContact({ id: item.id, ...values }));
       options.resetForm();
