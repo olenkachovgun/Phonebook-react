@@ -2,6 +2,7 @@
     border-bottom: 2px solid black;
     display: flex;
     justify-content: space-between;
+    justify-content: center;
     gap: 20px;
     align-items: center;
     text-align: center;

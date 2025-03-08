@@ -16,7 +16,7 @@ const SearchBox = ({}) => {
         id="name"
         value={filter}
         onChange={(e) => dispatch(setFilter(e.target.value))}
-        placeholder="Enter name"
+        placeholder="Enter name or number"
       />
       <CiSearch className={s.iconSearch} />
     </div>

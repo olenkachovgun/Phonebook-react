@@ -6,7 +6,7 @@ const HomePage = () => {
     <div className={s.container}>
       <h1 className={s.title}>
         {" "}
-        Task manager welcome page
+        Your phonebook application
         <span role="img" aria-label="Greeting icon">
           💁‍♀️
         </span>

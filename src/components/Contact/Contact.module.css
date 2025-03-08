@@ -85,7 +85,7 @@ button:focus-visible {
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    background: white;
+    background: rgb(208, 248, 250);
     text-align: center;
 }
 
@@ -100,4 +100,8 @@ button:focus-visible {
     display: flex;
     flex-direction: row;
     gap: 16px;
+}
+
+.modalName {
+    font-weight: 600;
 }

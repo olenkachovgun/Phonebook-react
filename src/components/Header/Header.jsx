@@ -13,9 +13,6 @@ const Header = () => {
   console.log(user.user.name);
   return (
     <header className={s.header}>
-      <h2>Auth</h2>
-
-      {user.user && <h3>Welcome, {user.user.name} !</h3>}
       <nav className={s.nav}>
         <NavLink
           to="/"
@@ -23,6 +20,7 @@ const Header = () => {
         >
           Home
         </NavLink>
+        {user.user && <h3>Welcome, {user.user.name} !</h3>}
         <NavLink
           to="/contacts"
           className={({ isActive }) => clsx(s.link, isActive && s.active)}

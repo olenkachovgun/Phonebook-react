@@ -68,7 +68,10 @@ const Contact = ({ edit, name, number, id }) => {
       </div>
       <dialog ref={modalRef} className={s.modalDel}>
         <div className={s.modalContent}>
-          <p>Are you sure you want to delete "{name}"?</p>
+          <p>
+            Are you sure you want to delete{" "}
+            <span className={s.modalName}>"{name}"</span>?
+          </p>
           <div className={s.modalBtn}>
             <button onClick={handleDelete}>Delete</button>
             <button onClick={() => modalRef.current.close()}>Cancel</button>
