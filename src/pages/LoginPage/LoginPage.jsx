@@ -1,9 +1,9 @@
 import React from "react";
-import { Field, Form, Formik, replace } from "formik";
+import { Field, Form, Formik } from "formik";
 import s from "../RegistrationPage/RegistrationPage.module.css";
 import { useDispatch } from "react-redux";
 import { loginThunk } from "../../redux/auth/operations";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import * as Yup from "yup";
 import { ErrorMessage } from "formik";

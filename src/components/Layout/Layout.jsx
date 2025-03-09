@@ -1,13 +1,16 @@
 // Створіть компонент Layout, який буде рендерити компонент AppBar і огортати усі маршрути, щоб бути доступним на кожному із них.
-
 import { Outlet } from "react-router-dom";
-import Header from "./components/Header/Header";
+import AppBar from "../AppBar/AppBar";
+import { Suspense } from "react";
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
-    <div>
-      <Header />
-      <Outlet />
+    <div className="wrapper">
+      <AppBar />
+      <Suspense fallback={null}>
+        {children}
+        <Outlet />
+      </Suspense>
     </div>
   );
 };

@@ -1,0 +1,25 @@
+.userMenu {
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+}
+
+.username {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(69, 68, 68);
+}
+
+.btnLogout {
+    min-width: 50px;
+    padding: 2px;
+}
+
+.btnLogout:hover {
+    background-color: #f7125b;
+}
+
+.iconLogout {
+    width: 30px;
+    height: 30px;
+}

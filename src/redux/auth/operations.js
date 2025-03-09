@@ -1,7 +1,8 @@
 // email: "teydabipso@gufum.com";
 // name: "teydabipso";
 // password: "teydabipso@gufum.com";
-// {email: 'teydabipso@gufum.com', name: 'teydabipso', password: 'teydabipso@gufum.com'}
+
+// tapsenakka@gufum.com
 
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";

@@ -6,6 +6,7 @@ import {
   editContact,
   //   updateLikeStatus,
 } from "./operations";
+import { logoutThunk } from "../auth/operations";
 
 // Початковий стан редюсера слайсу:
 const initialState = {
@@ -49,7 +50,9 @@ const slice = createSlice({
         item.name = action.payload.name;
         item.number = action.payload.number;
       })
-      .addCase(editContact.rejected, handleRejected);
+      .addCase(editContact.rejected, handleRejected)
+      .addCase(logoutThunk.fulfilled, () => initialState);
+
     //   .addCase(updateLikeStatus.fulfilled, (state, action) => {
     //     const item = state.items.find((item) => item.id === action.payload.id);
     //     if (item) {

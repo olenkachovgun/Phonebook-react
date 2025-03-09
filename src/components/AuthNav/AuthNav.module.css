@@ -1,0 +1,16 @@
+.AuthNav {
+    display: flex;
+    gap: 20px
+}
+
+.link {
+    color: rgb(37, 39, 39);
+    font-size: 26px;
+    text-decoration: none;
+}
+
+
+.active {
+    color: #f91a61;
+    text-decoration: underline;
+}

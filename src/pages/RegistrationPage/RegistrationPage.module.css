@@ -1,9 +1,12 @@
 .containerForm {
+    min-width: 300px;
+    max-width: 400px;
+    margin: 0 auto;
     margin-top: 16px;
     border: 1px solid #d5d3d3;
     border-radius: 8px;
     padding: 16px 26px;
-    background-color: rgb(206, 247, 247);
+    background-color: rgb(191, 237, 237, 0.5);
     box-shadow: 1px -1px 3px #d5d3d3;
 }
 

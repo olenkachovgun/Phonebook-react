@@ -1,10 +1,12 @@
-.formContainer {
-    width: 300px;
-    margin-bottom: 16px;
+.containerForm {
+    min-width: 300px;
+    max-width: 400px;
     margin: 0 auto;
-    border-radius: 4px;
-    border: 1px solid #acabab;
-    padding: 12px;
+    margin-top: 16px;
+    border: 1px solid #d5d3d3;
+    border-radius: 8px;
+    padding: 16px 26px;
+    background-color: rgb(191, 237, 237, 0.5);
     box-shadow: 1px -1px 3px #d5d3d3;
 }
 
@@ -18,10 +20,12 @@ label {
     display: flex;
     flex-direction: column;
     gap: 6px;
+    font-weight: 500;
+    color: rgb(61, 60, 60)
 }
 
 input {
-    padding: 6px 6px 6px 22px;
+    padding: 6px 24px;
     outline: none;
     box-shadow: 1px 1px 3px #b7babc;
     border: 1px solid rgb(208, 217, 224);
@@ -58,6 +62,7 @@ input:-internal-autofill-selected {
     color: #0cd6d9;
     text-align: center;
     margin-top: 12px;
+    background: white;
 
 }
 

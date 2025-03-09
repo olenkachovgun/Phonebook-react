@@ -69,7 +69,7 @@ const RegistrationPage = () => {
             Register
           </button>
           <p>
-            You already have an account. <Link to="/login">Get IT!</Link>
+            You already have an account <Link to="/login">Get IT!</Link>
           </p>
         </Form>
       </Formik>

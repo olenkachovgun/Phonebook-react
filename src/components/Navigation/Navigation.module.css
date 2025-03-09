@@ -1,0 +1,21 @@
+.link {
+    color: rgb(37, 39, 39);
+    font-size: 26px;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.active {
+    color: #f7125b;
+    text-decoration: underline;
+}
+
+.navHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

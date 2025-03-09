@@ -48,14 +48,14 @@ const ContactForm = ({ initialValues, text = "Add", closeModal }) => {
   };
 
   return (
-    <div className={s.formContainer}>
+    <div>
       <Formik
         initialValues={initialValues || defaultValues}
         onSubmit={onSubmit}
         validationSchema={FeedbackSchema}
         enableReinitialize={true}
       >
-        <Form>
+        <Form className={s.containerForm}>
           <label>
             Name
             <Field type="text" name="name" placeholder="Enter name" />

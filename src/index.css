@@ -18,7 +18,7 @@ body {
   color: rgb(34, 34, 34);
   margin: 0;
   display: flex;
-  place-items: center;
+
   justify-content: center;
   min-width: 320px;
   min-height: 100vh;
@@ -42,4 +42,8 @@ p {
 h1 {
   text-shadow: 1px 1px 3px #20f2f5;
 
+}
+
+a:hover {
+  color: #f7125b
 }
