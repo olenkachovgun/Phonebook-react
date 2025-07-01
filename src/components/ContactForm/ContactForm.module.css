@@ -3,11 +3,11 @@
     max-width: 400px;
     margin: 0 auto;
     margin-top: 16px;
-    border: 1px solid #d5d3d3;
+    border: 1px solid #a3c9f9;
     border-radius: 8px;
     padding: 16px 26px;
-    background-color: rgb(191, 237, 237, 0.5);
-    box-shadow: 1px -1px 3px #d5d3d3;
+    background-color: #f6f8fa;
+    box-shadow: 0 2px 8px rgba(60, 60, 100, 0.07);
 }
 
 form {
@@ -51,15 +51,15 @@ input:-internal-autofill-selected {
     width: 150px;
     margin: 0 auto;
     border-radius: 8px;
-    border: 1px solid #20f2f5;
+    border: 1px solid #a3c9f9;
     padding: 6px 12px;
     font-weight: 500;
     font-family: inherit;
     background-color: transparent;
     cursor: pointer;
     transition: background-color 0.25s;
-    box-shadow: 1px 1px 3px #20f2f5;
-    color: #0cd6d9;
+    box-shadow: 1px 1px 3px #a3c9f9;
+    color: #3a86ff;
     text-align: center;
     margin-top: 12px;
     background: white;
@@ -67,8 +67,8 @@ input:-internal-autofill-selected {
 }
 
 .btnAddContact:hover {
-    border-color: #20f2f5;
-    background-color: #0cd6d9;
+    border-color: #a3c9f9;
+    background-color: #a3c9f9;
     color: aliceblue;
     transform: scale(1.05);
 

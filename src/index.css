@@ -11,17 +11,72 @@
 body {
   max-width: 1280px;
   text-align: center;
-  background: linear-gradient(180deg, #74ebeb 0%, #ffb6cd 100%);
+  background: linear-gradient(180deg, #f6f8fa 0%, #e0e1dd 100%);
 }
 
 #root {
-  color: rgb(34, 34, 34);
+  color: #22223b;
   margin: 0;
   display: flex;
-
   justify-content: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+a {
+  color: #3a86ff;
+}
+
+a:hover {
+  color: #4361ee;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-shadow: 1px 1px 3px #e0e1dd;
+}
+
+.card,
+.header,
+.btn,
+.containerForm,
+.searchBox,
+.item,
+.listItem {
+  background: #fff;
+  border: 1px solid #e0e1dd;
+  box-shadow: 0 2px 8px rgba(60, 60, 100, 0.07);
+}
+
+
+body.dark-theme {
+  background: linear-gradient(180deg, #232526 0%, #414345 100%);
+}
+
+body.dark-theme,
+body.dark-theme #root {
+  color: #f1f1f1;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6 {
+  text-shadow: 1px 1px 3px #232526;
+}
+
+body.dark-theme a {
+  color: #f1c40f;
+}
+
+body.dark-theme a:hover {
+  color: #f7125b;
 }
 
 ul {
@@ -40,10 +95,5 @@ p {
 }
 
 h1 {
-  text-shadow: 1px 1px 3px #20f2f5;
-
-}
-
-a:hover {
-  color: #f7125b
+  text-shadow: 1px 1px 3px #a3c9f9;
 }
