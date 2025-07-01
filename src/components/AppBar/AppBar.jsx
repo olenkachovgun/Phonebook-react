@@ -17,7 +17,12 @@ const AppBar = () => {
         <button
           onClick={toggleTheme}
           className={s.themeToggleBtn}
-          title="Змінити тему"
+          title={
+            theme === "light" ? "Увімкнути темну тему" : "Увімкнути світлу тему"
+          }
+          aria-label={
+            theme === "light" ? "Увімкнути темну тему" : "Увімкнути світлу тему"
+          }
         >
           {theme === "light" ? "🌙" : "☀️"}
         </button>
