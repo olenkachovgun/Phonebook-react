@@ -1,33 +1,35 @@
 ### React + Vite
 
-📞 [Книга Контактів (Phonebook)](https://goit-react-hw-08-smoky-ten.vercel.app/)
- Веб-застосунок для зручного управління вашими особистими контактами. Проєкт з функціоналом реєстрації, авторизації та роботи з приватною колекцією контактів.
+📞 [Phonebook](https://goit-react-hw-08-smoky-ten.vercel.app/)
+A web application for convenient management of your personal contacts. The project features registration, authentication, and working with a private collection of contacts.
 
-✨ Основні можливості
- - Реєстрація користувача: Створюйте новий обліковий запис для доступу до функціоналу.
- - Авторизація (Логін/Логаут): Безпечний вхід та вихід з системи з автоматичним відновленням сесії при перезавантаженні сторінки.
- - Приватна колекція контактів: Кожен користувач має свою власну, захищену колекцію контактів.
- - Додавання/Видалення контактів: Легко керуйте вашими записами.
- - Фільтрація контактів: Швидкий пошук контактів за ім'ям або номером телефону.
- - Адаптивний дизайн: Зручний інтерфейс на будь-яких пристроях.
-   
-🛠️ Технології
- - Frontend:
-React.js, Redux Toolkit (з Redux Persist для збереження стану авторизації), React Router (для маршрутизації), Formik (для управління формами реєстрації та логіну), JavaScript
-HTML5, CSS3, Toast (для повідомлень)
- - Backend: 
-REST API за посиланням: https://connections-api.goit.global/
+✨ Main Features
 
-📂 Структура проєкту (Redux)
-Проєкт використовує модульну структуру Redux для організації стану, що забезпечує чистоту та легкість підтримки коду
+- User Registration: Create a new account to access the app's features.
+- Authentication (Login/Logout): Secure login and logout with automatic session restoration after page reload.
+- Private Contacts Collection: Each user has their own protected collection of contacts.
+- Add/Delete Contacts: Easily manage your records.
+- Contact Filtering: Quickly search contacts by name or phone number.
+- Responsive Design: User-friendly interface on any device.
 
-👣 Маршрутизація
-Реалізована бібліотекою React Router. Для обгортки компонентів публічних і приватних сторінок використано компоненти PrivateRoute та RestrictedRoute.
-У застосунку  наступні маршрути:
-/ - маршрут домашньої сторінки додатка.
-/register - публічний маршрут для реєстрації нового користувача.
-/login - публічний маршрут для логіна існуючого користувача.
-/contacts - приватний маршрут для роботи зі списком контактів користувача.
+🛠️ Technologies
+
+- Frontend:
+  React.js, Redux Toolkit (with Redux Persist for auth state), React Router (for routing), Formik (for registration and login forms), JavaScript
+  HTML5, CSS3, Toast (for notifications)
+- Backend:
+  REST API: https://connections-api.goit.global/
+
+📂 Project Structure (Redux)
+The project uses a modular Redux structure for state management, ensuring clean and maintainable code.
+
+👣 Routing
+Implemented with React Router. Components PrivateRoute and RestrictedRoute are used to wrap public and private pages.
+The app includes the following routes:
+/ - Home page route.
+/register - Public route for new user registration.
+/login - Public route for existing user login.
+/contacts - Private route for managing the user's contact list.
 
 =====
 ###🌍Live Demo https://goit-react-hw-08-smoky-ten.vercel.app/

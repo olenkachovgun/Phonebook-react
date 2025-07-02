@@ -46,17 +46,17 @@ const ContactList = () => {
       ))}
 
       {filterData.length === 0 && contacts.length !== 0 && (
-        <>
-          <p>Not found</p>
+        <div className={s.notFoundRow}>
+          <p className={s.notFound}>No contacts found for your search.</p>
           {/* //{toast.error("Not found. Try again...")}; */}
           <button
             onClick={() => dispatch(resetFilter())}
             type="button"
-            className="btnReset"
+            className={s.btnReset}
           >
             Reset
           </button>
-        </>
+        </div>
       )}
       {isOpen && (
         <Suspense fallback={<p>Loading...</p>}>

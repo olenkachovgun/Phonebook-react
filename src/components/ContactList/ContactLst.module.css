@@ -8,3 +8,46 @@
 
 
 }
+
+.notFound {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #3a86ff;
+    letter-spacing: 1px;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+
+.notFoundRow {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 16px;
+    margin: 24px 0 8px 0;
+}
+
+.btnReset {
+    padding: 6px 18px;
+    border: 1.5px solid #3a86ff;
+    border-radius: 8px;
+    background: none;
+    color: #3a86ff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    outline: none;
+    margin: 0;
+    box-shadow: none;
+    vertical-align: middle;
+}
+
+.btnReset:hover,
+.btnReset:focus {
+    background: #3a86ff;
+    color: #fff;
+    border-color: #3a86ff;
+}

@@ -9,18 +9,20 @@
 }
 
 body {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   text-align: center;
   background: linear-gradient(180deg, #f6f8fa 0%, #e0e1dd 100%);
+  overflow-x: hidden;
 }
 
 #root {
   color: #22223b;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  min-width: 320px;
+
+  width: 100%;
   min-height: 100vh;
+
+  overflow-x: hidden;
 }
 
 a {
@@ -31,14 +33,14 @@ a:hover {
   color: #4361ee;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   text-shadow: 1px 1px 3px #e0e1dd;
-}
+} */
 
 .card,
 .header,
@@ -62,14 +64,7 @@ body.dark-theme #root {
   color: #f1f1f1;
 }
 
-body.dark-theme h1,
-body.dark-theme h2,
-body.dark-theme h3,
-body.dark-theme h4,
-body.dark-theme h5,
-body.dark-theme h6 {
-  text-shadow: 1px 1px 3px #232526;
-}
+
 
 body.dark-theme a {
   color: #f1c40f;

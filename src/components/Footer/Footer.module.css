@@ -1,12 +1,15 @@
 .footer {
-    width: 100%;
-    padding: 20px;
+    width: 100vw;
+    padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
     border-bottom: none;
     margin-top: 40px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .footer.dark-theme {

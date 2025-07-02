@@ -18,15 +18,36 @@
 }
 
 .btnLogout {
-    min-width: 50px;
-    padding: 2px;
+    min-width: 32px;
+    min-height: 32px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    box-shadow: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    outline: none;
 }
 
-.btnLogout:hover {
-    background-color: #f7125b;
+.btnLogout:hover,
+.btnLogout:focus {
+    background: none;
 }
 
 .iconLogout {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
+    color: #3a86ff;
+    transition: color 0.2s;
+}
+
+.btnLogout:hover .iconLogout,
+.btnLogout:focus .iconLogout {
+    color: #f7125b;
 }

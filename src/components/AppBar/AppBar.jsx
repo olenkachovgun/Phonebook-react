@@ -12,21 +12,23 @@ const AppBar = () => {
 
   return (
     <header className={s.header}>
-      <Navigation />
-      <div className={s.themeToggleContainer}>
-        <button
-          onClick={toggleTheme}
-          className={s.themeToggleBtn}
-          title={
-            theme === "light" ? "Увімкнути темну тему" : "Увімкнути світлу тему"
-          }
-          aria-label={
-            theme === "light" ? "Увімкнути темну тему" : "Увімкнути світлу тему"
-          }
-        >
-          {theme === "light" ? "🌙" : "☀️"}
-        </button>
-        {isLoggedIn ? <UserMenu /> : <AuthNav />}
+      <div className={s.headerContent}>
+        <Navigation />
+        <div className={s.themeToggleContainer}>
+          <button
+            onClick={toggleTheme}
+            className={s.themeToggleBtn}
+            title={
+              theme === "light" ? "Switch to dark mode" : "Switch to light mode"
+            }
+            aria-label={
+              theme === "light" ? "Switch to dark mode" : "Switch to light mode"
+            }
+          >
+            {theme === "light" ? "🌙" : "☀️"}
+          </button>
+          {isLoggedIn ? <UserMenu /> : <AuthNav />}
+        </div>
       </div>
     </header>
   );

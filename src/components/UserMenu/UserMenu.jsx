@@ -13,7 +13,12 @@ const UserMenu = () => {
   return (
     <div className={s.userMenu}>
       <p className={s.username}>Welcome, {user.user.name}!</p>
-      <button onClick={() => dispatch(logoutThunk())} className={s.btnLogout}>
+      <button
+        onClick={() => dispatch(logoutThunk())}
+        className={s.btnLogout}
+        title="Logout"
+        aria-label="Logout"
+      >
         <IoIosLogOut className={s.iconLogout} />
       </button>
     </div>
