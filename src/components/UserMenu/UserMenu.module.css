@@ -4,10 +4,17 @@
     flex-direction: row;
 }
 
-.username {
+.userMenu .username {
     font-size: 22px;
     font-weight: 600;
-    color: rgb(69, 68, 68);
+}
+
+.light-theme .userMenu .username {
+    color: #22223b;
+}
+
+.dark-theme .userMenu .username {
+    color: #f1f1f1;
 }
 
 .btnLogout {

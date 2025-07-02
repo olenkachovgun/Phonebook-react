@@ -19,7 +19,7 @@ const ContactsPage = () => {
     };
   }, [dispatch]);
   return (
-    <div>
+    <div className="wrapper">
       <div className="phonebook">
         <FaAddressBook className="iconTitle" />
         <h1>Phonebook</h1>

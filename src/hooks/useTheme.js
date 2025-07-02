@@ -11,7 +11,11 @@ export default function useTheme() {
   });
 
   useEffect(() => {
-    document.body.classList.toggle("dark-theme", theme === "dark");
+    const root = document.getElementById("root");
+    document.body.classList.remove("light-theme", "dark-theme");
+    root?.classList.remove("light-theme", "dark-theme");
+    document.body.classList.add(`${theme}-theme`);
+    root?.classList.add(`${theme}-theme`);
     localStorage.setItem(THEME_KEY, theme);
   }, [theme]);
 

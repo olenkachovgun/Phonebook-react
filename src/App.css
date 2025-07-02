@@ -3,8 +3,42 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 6px 20px;
+  padding-bottom: 24px;
+}
 
+@media (max-width: 1200px) {
+  .wrapper {
+    max-width: 1000px;
+  }
+}
 
+@media (max-width: 992px) {
+  .wrapper {
+    max-width: 800px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 100vw;
+    padding: 6px 8px;
+    padding-bottom: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 4px 4px;
+    padding-bottom: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 2px 2px;
+    padding-bottom: 20px;
+  }
 }
 
 .btnReset {

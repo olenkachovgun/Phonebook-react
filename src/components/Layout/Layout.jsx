@@ -2,6 +2,7 @@
 import { Outlet } from "react-router-dom";
 import AppBar from "../AppBar/AppBar";
 import { Suspense } from "react";
+import Footer from "../Footer/Footer";
 
 const Layout = ({ children }) => {
   return (
@@ -11,6 +12,7 @@ const Layout = ({ children }) => {
         {children}
         <Outlet />
       </Suspense>
+      <Footer />
     </div>
   );
 };
